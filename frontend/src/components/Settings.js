@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Settings, Bell, User, Shield, Database, Cpu, Save, RefreshCw } from 'lucide-react';
+import { Settings, Bell, User, Shield, Cpu, Save, RefreshCw } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const SettingsPage = () => {
