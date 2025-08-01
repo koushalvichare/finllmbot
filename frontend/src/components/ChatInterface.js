@@ -29,7 +29,8 @@ const ChatInterface = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8000/analyze-financial-data', {
+      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+      const response = await fetch(`${API_URL}/analyze-financial-data`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

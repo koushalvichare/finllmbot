@@ -26,6 +26,7 @@ MANIFEST
 venv/
 env/
 ENV/
+.venv/
 
 # IDE
 .vscode/
@@ -47,15 +48,20 @@ logs/
 
 # Environment variables
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Model files (excluding the ones we want to keep)
 *.bin
 *.h5
 *.onnx
 
-# Frontend dependencies
+# Frontend dependencies and build
 frontend/node_modules/
 frontend/build/
+frontend/.env
 frontend/.env.local
 frontend/.env.development.local
 frontend/.env.test.local
@@ -65,3 +71,12 @@ frontend/.env.production.local
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
+
+# Backend specific
+backend/.env
+backend/__pycache__/
+backend/*.pyc
+
+# Deployment
+.vercel
+.render
