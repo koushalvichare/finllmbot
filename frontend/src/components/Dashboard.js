@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Activity, TrendingUp, TrendingDown, DollarSign, BarChart3, Users, Zap } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
 
 const Dashboard = () => {
-  const [stats, setStats] = useState({
+  const [stats] = useState({
     totalPortfolio: 125000,
     dailyChange: 2.5,
     monthlyReturn: 8.3,
